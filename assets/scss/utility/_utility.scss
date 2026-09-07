@@ -48,11 +48,6 @@
   overflow: hidden;
 }
 
-/* font 英語 */
-.u-font-en {
-  font-family: "Oswald", sans-serif;
-}
-
 /* pc 非表示 */
 .u-pc-hidden {
   @include g.media() {
@@ -73,4 +68,11 @@
 .u-en {
   font-family: "Outfit", sans-serif;
   text-transform: capitalize;
+}
+
+/* mask-img */
+.u-mask-img {
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
 }

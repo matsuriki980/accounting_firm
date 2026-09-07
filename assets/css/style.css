@@ -145,11 +145,6 @@ body {
   overflow: hidden;
 }
 
-/* font 英語 */
-.u-font-en {
-  font-family: "Oswald", sans-serif;
-}
-
 /* pc 非表示 */
 @media (width >= 900px) {
   .u-pc-hidden {
@@ -171,6 +166,13 @@ body {
 .u-en {
   font-family: "Outfit", sans-serif;
   text-transform: capitalize;
+}
+
+/* mask-img */
+.u-mask-img {
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
 }
 
 /* --------------------------------------
@@ -425,6 +427,21 @@ body {
   }
   100% {
     translate: -100%;
+  }
+}
+/* --------------------------------------
+  logo
+-------------------------------------- */
+.c-logo {
+  width: 125rem;
+  height: 17rem;
+  mask-image: url(../img/common/c-logo.svg);
+  background-color: #1d1d1d;
+}
+@media (width >= 900px) {
+  .c-logo {
+    width: 165rem;
+    height: 22rem;
   }
 }
 
