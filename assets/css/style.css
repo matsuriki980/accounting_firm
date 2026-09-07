@@ -355,6 +355,11 @@ body {
   overflow: hidden;
   position: relative;
 }
+@media (width >= 900px) {
+  .c-marquee {
+    font-size: 250rem;
+  }
+}
 .c-marquee::before, .c-marquee::after {
   content: "";
   display: block;
