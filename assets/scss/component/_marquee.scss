@@ -13,6 +13,10 @@
   overflow: hidden;
   position: relative;
 
+  @include g.media() {
+    font-size: 250rem;
+  }
+
   // 上下の線 //
   &::before,
   &::after {
