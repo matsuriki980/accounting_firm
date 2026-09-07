@@ -100,6 +100,62 @@ body {
 }
 
 /* --------------------------------------
+  title
+-------------------------------------- */
+.c-title__wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+@media (width >= 900px) {
+  .c-title__wrapper {
+    gap: 0;
+  }
+}
+
+.c-title-ja {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 2.625;
+  /* □の装飾 */
+}
+.c-title-ja::before {
+  content: "";
+  display: block;
+  width: 15rem;
+  aspect-ratio: 1/1;
+  background: #3f4f8a;
+}
+
+.c-title-en {
+  display: inline-block;
+  font-size: 64rem;
+  font-weight: 200;
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+  position: relative;
+}
+@media (width >= 900px) {
+  .c-title-en {
+    font-size: 110rem;
+  }
+}
+.c-title-en {
+  /* 装飾線 */
+}
+.c-title-en::before, .c-title-en::after {
+  content: "";
+  display: block;
+  background: #303030;
+  opacity: 0.25;
+  height: 1px;
+  position: absolute;
+}
+
+/* --------------------------------------
   utility
 -------------------------------------- */
 /* padding-inline */
@@ -165,6 +221,12 @@ body {
   .u-sp-hidden {
     display: block;
   }
+}
+
+/* font 英語 */
+.u-en {
+  font-family: "Outfit", sans-serif;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */
