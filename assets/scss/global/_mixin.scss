@@ -17,3 +17,10 @@ $breakpoints: (
     @content;
   }
 }
+
+// mask-img
+@mixin mask-img {
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}

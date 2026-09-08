@@ -602,6 +602,7 @@ body {
   logo
 -------------------------------------- */
 .c-logo {
+  display: block;
   width: 125rem;
   height: 17rem;
   mask-image: url(../img/common/c-logo.svg);
@@ -611,6 +612,175 @@ body {
   .c-logo {
     width: 165rem;
     height: 22rem;
+  }
+}
+
+/* --------------------------------------
+  header
+-------------------------------------- */
+.l-header {
+  color: #303030;
+}
+
+.l-header__inner {
+  padding: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (width >= 900px) {
+  .l-header__inner {
+    padding: 17rem 30rem 17rem 60rem;
+  }
+}
+
+.l-header__logo.is-open .l-header__logo-link {
+  background-color: #ffffff;
+}
+
+@media (width >= 900px) {
+  .l-header__content {
+    display: flex;
+    align-items: center;
+    gap: 37rem;
+  }
+}
+
+@media (width >= 900px) {
+  .l-header__list {
+    display: flex;
+    align-items: center;
+    gap: 36rem;
+  }
+}
+
+@media (width >= 900px) {
+  .l-header__link {
+    font-size: 14rem;
+    letter-spacing: 0.06em;
+    padding-bottom: 6rem;
+  }
+}
+
+.l-header__btns {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+@media (width >= 900px) {
+  .l-header__btns {
+    gap: 12rem;
+  }
+}
+
+.l-header__btn {
+  width: 39rem;
+  aspect-ratio: 1/1;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+@media (width >= 900px) {
+  .l-header__btn {
+    width: 58rem;
+  }
+}
+.l-header__btn--contact {
+  display: grid;
+  place-items: center;
+}
+.l-header__btn--contact::before {
+  content: "";
+  display: block;
+  width: 16rem;
+  height: 11.5rem;
+  mask-image: url(../img/common/mail-icon.svg);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: currentColor;
+  transition: background-color 0.3s;
+}
+@media (width >= 900px) {
+  .l-header__btn--contact::before {
+    width: 23rem;
+    height: 16.6rem;
+  }
+}
+@media (width >= 900px) {
+  .l-header__btn--contact:hover {
+    background: #303030;
+  }
+  .l-header__btn--contact:hover::before {
+    background-color: #ffffff;
+  }
+}
+.l-header__btn--hamburger {
+  background: currentColor;
+  position: relative;
+}
+.l-header__btn--hamburger span {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #ffffff;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: transform 0.3s, background 0.3s;
+}
+.l-header__btn--hamburger span:nth-of-type(1) {
+  width: 42.85%;
+  top: calc(50% - 2px);
+  left: 50%;
+}
+@media (width >= 900px) {
+  .l-header__btn--hamburger span:nth-of-type(1) {
+    top: calc(50% - 3px);
+  }
+}
+.l-header__btn--hamburger span:nth-of-type(2) {
+  width: 30%;
+  top: calc(50% + 2px);
+  left: calc(50% + 2px);
+}
+@media (width >= 900px) {
+  .l-header__btn--hamburger span:nth-of-type(2) {
+    top: calc(50% + 3px);
+    left: calc(50% + 4px);
+  }
+}
+.l-header__btn--hamburger.is-open {
+  background: #ffffff;
+}
+@media (width >= 900px) {
+  .l-header__btn--hamburger.is-open {
+    background: #303030;
+  }
+}
+.l-header__btn--hamburger.is-open span {
+  width: 46.375%;
+  background: currentColor;
+  transform-origin: center;
+  top: auto;
+  left: 50%;
+}
+@media (width >= 900px) {
+  .l-header__btn--hamburger.is-open span {
+    background: #ffffff;
+  }
+}
+.l-header__btn--hamburger.is-open span:nth-of-type(1) {
+  transform: translate(-50%, 0) rotate(30deg);
+}
+.l-header__btn--hamburger.is-open span:nth-of-type(2) {
+  transform: translate(-50%, 0) rotate(-30deg);
+}
+@media (width >= 900px) {
+  .l-header__btn--hamburger:hover {
+    background: #ffffff;
+  }
+  .l-header__btn--hamburger:hover span {
+    background: #303030;
   }
 }
 
