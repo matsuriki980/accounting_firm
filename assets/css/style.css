@@ -620,6 +620,12 @@ body {
 -------------------------------------- */
 .l-header {
   color: #303030;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  transition: color 0.3s;
 }
 
 .l-header__inner {
@@ -634,15 +640,17 @@ body {
   }
 }
 
-.l-header__logo.is-open .l-header__logo-link {
-  background-color: #ffffff;
-}
-
 @media (width >= 900px) {
   .l-header__content {
     display: flex;
     align-items: center;
     gap: 37rem;
+  }
+}
+
+@media (width >= 900px) {
+  .l-header__nav {
+    transition: opacity 0.3s, visibility 0.3s;
   }
 }
 
@@ -676,9 +684,9 @@ body {
 .l-header__btn {
   width: 39rem;
   aspect-ratio: 1/1;
-  border: 1px solid currentColor;
+  border: 1px solid #303030;
   border-radius: 50%;
-  transition: background 0.3s;
+  transition: background 0.3s, border 0.3s;
 }
 @media (width >= 900px) {
   .l-header__btn {
@@ -688,6 +696,7 @@ body {
 .l-header__btn--contact {
   display: grid;
   place-items: center;
+  transition: opacity 0.3s, visibility 0.3s, background 0.3s, border 0.3s;
 }
 .l-header__btn--contact::before {
   content: "";
@@ -749,37 +758,63 @@ body {
     left: calc(50% + 4px);
   }
 }
-.l-header__btn--hamburger.is-open {
-  background: #ffffff;
-}
-@media (width >= 900px) {
-  .l-header__btn--hamburger.is-open {
-    background: #303030;
-  }
-}
-.l-header__btn--hamburger.is-open span {
-  width: 46.375%;
-  background: currentColor;
-  transform-origin: center;
-  top: auto;
-  left: 50%;
-}
-@media (width >= 900px) {
-  .l-header__btn--hamburger.is-open span {
-    background: #ffffff;
-  }
-}
-.l-header__btn--hamburger.is-open span:nth-of-type(1) {
-  transform: translate(-50%, 0) rotate(30deg);
-}
-.l-header__btn--hamburger.is-open span:nth-of-type(2) {
-  transform: translate(-50%, 0) rotate(-30deg);
-}
 @media (width >= 900px) {
   .l-header__btn--hamburger:hover {
     background: #ffffff;
   }
   .l-header__btn--hamburger:hover span {
+    background: #303030;
+  }
+}
+
+/* ハンバーガーメニューopen時 */
+.l-header.is-open {
+  color: #ffffff;
+}
+.l-header.is-open .l-header__logo-link {
+  background-color: #ffffff;
+}
+@media (width >= 900px) {
+  .l-header.is-open .l-header__nav {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.l-header.is-open .l-header__btn--contact {
+  opacity: 0;
+  visibility: hidden;
+}
+.l-header.is-open .l-header__btn--hamburger {
+  background: #ffffff;
+}
+@media (width >= 900px) {
+  .l-header.is-open .l-header__btn--hamburger {
+    background: #303030;
+  }
+}
+.l-header.is-open .l-header__btn--hamburger span {
+  width: 46.375%;
+  background: #303030;
+  transform-origin: center;
+  top: auto;
+  left: 50%;
+}
+@media (width >= 900px) {
+  .l-header.is-open .l-header__btn--hamburger span {
+    background: #ffffff;
+  }
+}
+.l-header.is-open .l-header__btn--hamburger span:nth-of-type(1) {
+  transform: translate(-50%, 0) rotate(30deg);
+}
+.l-header.is-open .l-header__btn--hamburger span:nth-of-type(2) {
+  transform: translate(-50%, 0) rotate(-30deg);
+}
+@media (width >= 900px) {
+  .l-header.is-open .l-header__btn--hamburger:hover {
+    background: #ffffff;
+  }
+  .l-header.is-open .l-header__btn--hamburger:hover span {
     background: #303030;
   }
 }

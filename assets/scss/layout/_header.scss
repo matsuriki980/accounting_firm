@@ -5,6 +5,12 @@
 -------------------------------------- */
 .l-header {
   color: g.$color-primary;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: g.$z-index-header;
+  transition: color 0.3s;
 }
 
 .l-header__inner {
@@ -18,15 +24,6 @@
   }
 }
 
-.l-header__logo {
-  // ハンバーガーメニューopen時、色を変える
-  &.is-open {
-    .l-header__logo-link {
-      background-color: g.$color-white;
-    }
-  }
-}
-
 .l-header__content {
   @include g.media() {
     display: flex;
@@ -36,6 +33,11 @@
 }
 
 .l-header__nav {
+  @include g.media() {
+    transition:
+      opacity 0.3s,
+      visibility 0.3s;
+  }
 }
 
 .l-header__list {
@@ -70,9 +72,11 @@
 .l-header__btn {
   width: 39rem;
   aspect-ratio: 1/1;
-  border: 1px solid currentColor;
+  border: 1px solid g.$color-primary;
   border-radius: 50%;
-  transition: background 0.3s;
+  transition:
+    background 0.3s,
+    border 0.3s;
 
   @include g.media() {
     width: 58rem;
@@ -81,6 +85,11 @@
   &--contact {
     display: grid;
     place-items: center;
+    transition:
+      opacity 0.3s,
+      visibility 0.3s,
+      background 0.3s,
+      border 0.3s;
 
     // icon
     &::before {
@@ -152,8 +161,46 @@
       }
     }
 
-    // ハンバーガーメニューopen時、×に
-    &.is-open {
+    // hover時、色を反転
+    @include g.media() {
+      &:hover {
+        background: g.$color-white;
+
+        // border
+        span {
+          background: g.$color-primary;
+        }
+      }
+    }
+  }
+}
+
+/* ハンバーガーメニューopen時 */
+.l-header {
+  &.is-open {
+    color: g.$color-white;
+
+    // 白色に変更
+    .l-header__logo-link {
+      background-color: g.$color-white;
+    }
+
+    // ナビゲーションを非表示
+    .l-header__nav {
+      @include g.media() {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    // お問い合わせボタンを非表示
+    .l-header__btn--contact {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    // ハンバーガーボタンのborderの色を変更
+    .l-header__btn--hamburger {
       background: g.$color-white;
 
       @include g.media() {
@@ -163,7 +210,7 @@
       // border
       span {
         width: 46.375%;
-        background: currentColor;
+        background: g.$color-primary;
         transform-origin: center;
         top: auto;
         left: 50%;
@@ -182,16 +229,16 @@
       span:nth-of-type(2) {
         transform: translate(-50%, 0) rotate(-30deg);
       }
-    }
 
-    // hover時、色を反転
-    @include g.media() {
-      &:hover {
-        background: g.$color-white;
+      // hover時、色を反転
+      @include g.media() {
+        &:hover {
+          background: g.$color-white;
 
-        // border
-        span {
-          background: g.$color-primary;
+          // border
+          span {
+            background: g.$color-primary;
+          }
         }
       }
     }
