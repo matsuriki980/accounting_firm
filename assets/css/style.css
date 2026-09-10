@@ -1040,6 +1040,8 @@ body {
   background: #ffffff;
   color: #1d1d1d;
   position: relative;
+  padding-block: 30rem;
+  margin-bottom: 45rem;
 }
 .l-footer__contact::before {
   content: "";
@@ -1063,6 +1065,8 @@ body {
 }
 @media (width >= 900px) {
   .l-footer__contact {
+    padding-block: 0;
+    margin-bottom: 113rem;
     height: 540rem;
   }
 }
@@ -1180,6 +1184,229 @@ body {
 @media (width >= 900px) {
   .l-footer__content-item {
     border-radius: 10rem;
+  }
+}
+
+.l-footer__content {
+  color: #ffffff;
+}
+@media (width >= 900px) {
+  .l-footer__content {
+    display: grid;
+    padding-inline: 60rem;
+  }
+}
+
+.l-footer__logo {
+  width: 195rem;
+  height: 45rem;
+  background-color: currentColor;
+  margin-bottom: 26rem;
+}
+@media (width >= 900px) {
+  .l-footer__logo {
+    width: 225rem;
+    height: 52rem;
+    margin-bottom: 48rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.l-footer__nav {
+  margin-bottom: 26rem;
+}
+@media (width >= 900px) {
+  .l-footer__nav {
+    margin-bottom: 0;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: flex;
+    justify-content: flex-end;
+    gap: 80rem;
+  }
+}
+
+.l-footer__list {
+  position: relative;
+}
+.l-footer__list::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  opacity: 0.25;
+}
+@media (width >= 900px) {
+  .l-footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .l-footer__list--left {
+    gap: 30rem;
+  }
+  .l-footer__list--right {
+    gap: 20rem;
+  }
+  .l-footer__list::before {
+    display: none;
+  }
+}
+
+.l-footer__item {
+  padding-block: 17rem;
+  position: relative;
+}
+.l-footer__item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.25;
+}
+@media (width >= 900px) {
+  .l-footer__item {
+    padding: 0;
+  }
+  .l-footer__item::before {
+    display: none;
+  }
+}
+
+.l-footer__link {
+  display: block;
+  font-weight: 500;
+  position: relative;
+}
+@media (width >= 900px) {
+  .l-footer__link {
+    display: inline-block;
+    padding-bottom: 4rem;
+  }
+  .l-footer__link::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    transition: width 0.3s;
+  }
+  .l-footer__link:hover::before {
+    width: 100%;
+  }
+}
+
+/* 2階層のリスト */
+.l-footer__item--has-child .l-footer__link {
+  margin-bottom: 10rem;
+}
+@media (width >= 900px) {
+  .l-footer__item--has-child .l-footer__link {
+    margin-bottom: 15rem;
+  }
+}
+
+.l-footer__sub-list {
+  display: flex;
+  gap: 10rem 24rem;
+  flex-wrap: wrap;
+}
+@media (width >= 900px) {
+  .l-footer__sub-list {
+    flex-direction: column;
+    gap: 10rem;
+  }
+}
+
+.l-footer__sub-item {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+@media (width >= 900px) {
+  .l-footer__sub-item:has(.l-footer__sub-link:hover) {
+    opacity: 1;
+  }
+}
+
+.l-footer__sub-link {
+  font-size: 15rem;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.l-footer__sub-link::before {
+  content: "";
+  display: block;
+  background: currentColor;
+  width: 8rem;
+  height: 1px;
+}
+
+.l-footet__address {
+  font-size: 14rem;
+  line-height: 1.714;
+  letter-spacing: 0.06em;
+  margin-bottom: 36rem;
+}
+.l-footet__address span {
+  display: block;
+}
+@media (width >= 900px) {
+  .l-footet__address {
+    font-size: 15rem;
+    line-height: 1.6;
+    margin-bottom: 18rem;
+  }
+}
+
+.l-footer__bottom {
+  font-size: 10rem;
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13rem;
+  position: relative;
+}
+.l-footer__bottom::before {
+  content: "|";
+  position: absolute;
+  top: 45%;
+  left: 50.5%;
+  transform: translateY(-50%);
+}
+@media (width >= 900px) {
+  .l-footer__bottom {
+    justify-content: flex-start;
+    font-size: 12rem;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .l-footer__bottom::before {
+    left: 29.4%;
+  }
+}
+
+.l-footer__copy-right,
+.l-footer__privacy-policy {
+  opacity: 0.7;
+}
+
+@media (width >= 900px) {
+  .l-footer__privacy-policy {
+    transition: opacity 0.3s;
+  }
+  .l-footer__privacy-policy:hover {
+    opacity: 1;
   }
 }
 
