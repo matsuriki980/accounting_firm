@@ -1550,4 +1550,116 @@ body {
   }
 }
 
+/* --------------------------------------
+  top-fv
+-------------------------------------- */
+.p-top__fv {
+  color: #1d1d1d;
+}
+
+.p-top__fv-content {
+  padding: 87rem 30rem 41rem;
+  display: flex;
+  align-items: flex-end;
+}
+@media (width >= 900px) {
+  .p-top__fv-content {
+    padding: 196rem 90rem 60rem 78rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.p-top__fv-copy-en {
+  font-size: 70rem;
+  font-weight: 300;
+  line-height: 0.957;
+  letter-spacing: -0.05em;
+  margin-bottom: 16rem;
+  color: #303030;
+}
+.p-top__fv-copy-en span {
+  display: block;
+}
+@media (width >= 900px) {
+  .p-top__fv-copy-en {
+    font-size: 131rem;
+  }
+  .p-top__fv-copy-en span {
+    display: inline-block;
+  }
+}
+
+.p-top__fv-copy-ja {
+  font-size: 16rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.07em;
+}
+.p-top__fv-copy-ja span {
+  display: block;
+}
+@media (width >= 900px) {
+  .p-top__fv-copy-ja {
+    font-size: 18rem;
+  }
+  .p-top__fv-copy-ja span {
+    display: inline-block;
+  }
+}
+
+.p-top__fv-scroll-btn {
+  width: 60rem;
+  aspect-ratio: 1/1;
+  border: 1px solid currentColor;
+  display: grid;
+  place-items: center;
+}
+.p-top__fv-scroll-btn::before {
+  content: "";
+  display: block;
+  width: 28rem;
+  aspect-ratio: 1/1;
+  mask-image: url(../img/top/p-top__fv-scroll-btn-icon.svg);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: currentColor;
+}
+@media (width >= 900px) {
+  .p-top__fv-scroll-btn {
+    width: 120rem;
+  }
+  .p-top__fv-scroll-btn::before {
+    width: 56rem;
+  }
+}
+
+.p-top__fv-img {
+  position: relative;
+}
+.p-top__fv-img::before {
+  content: "";
+  display: block;
+  width: 60rem;
+  aspect-ratio: 60/75;
+  background-image: url(../img/top/p-top__fv-decoration.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -30rem;
+  right: 0;
+}
+@media (width >= 900px) {
+  .p-top__fv-img {
+    margin-right: 90rem;
+  }
+  .p-top__fv-img::before {
+    width: 120rem;
+    top: -60rem;
+    right: -60rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
