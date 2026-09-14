@@ -16,16 +16,46 @@
 }
 
 .p-top__service-head {
-  padding-left: 15rem;
+  padding-left: 30rem;
   margin-bottom: 40rem;
 
   @include g.media() {
-    padding-inline: 90rem 120rem;
+    padding-inline: 125rem 120rem;
     display: grid;
     grid-template-columns: 1fr 446rem;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 78rem;
+  }
+}
+
+.p-top__service-title-en {
+  // 上
+  &::before {
+    width: 180rem;
+    left: -15rem;
+  }
+
+  &::after {
+    width: 195rem;
+    right: -15rem;
+  }
+
+  @include g.media() {
+
+    &::before,
+    &::after {
+      width: 476rem;
+    }
+
+    // 上
+    &::before {
+      left: -30rem;
+    }
+
+    &::after {
+      right: 0;
+    }
   }
 }
 
