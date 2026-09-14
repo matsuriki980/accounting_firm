@@ -1870,17 +1870,37 @@ body {
 }
 
 .p-top__service-head {
-  padding-left: 15rem;
+  padding-left: 30rem;
   margin-bottom: 40rem;
 }
 @media (width >= 900px) {
   .p-top__service-head {
-    padding-inline: 90rem 120rem;
+    padding-inline: 125rem 120rem;
     display: grid;
     grid-template-columns: 1fr 446rem;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 78rem;
+  }
+}
+
+.p-top__service-title-en::before {
+  width: 180rem;
+  left: -15rem;
+}
+.p-top__service-title-en::after {
+  width: 195rem;
+  right: -15rem;
+}
+@media (width >= 900px) {
+  .p-top__service-title-en::before, .p-top__service-title-en::after {
+    width: 476rem;
+  }
+  .p-top__service-title-en::before {
+    left: -30rem;
+  }
+  .p-top__service-title-en::after {
+    right: 0;
   }
 }
 
