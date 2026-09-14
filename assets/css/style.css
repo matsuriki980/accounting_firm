@@ -218,13 +218,6 @@ body {
   line-height: 0.92;
   letter-spacing: -0.05em;
   position: relative;
-}
-@media (width >= 900px) {
-  .c-title-en {
-    font-size: 110rem;
-  }
-}
-.c-title-en {
   /* 装飾線 */
 }
 .c-title-en::before, .c-title-en::after {
@@ -234,6 +227,23 @@ body {
   opacity: 0.25;
   height: 1px;
   position: absolute;
+}
+.c-title-en::before {
+  top: 8rem;
+}
+.c-title-en::after {
+  bottom: 4rem;
+}
+@media (width >= 900px) {
+  .c-title-en {
+    font-size: 110rem;
+  }
+  .c-title-en::before {
+    top: 17rem;
+  }
+  .c-title-en::after {
+    bottom: 11rem;
+  }
 }
 
 /* --------------------------------------

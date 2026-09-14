@@ -39,10 +39,6 @@
   letter-spacing: -0.05em;
   position: relative;
 
-  @include g.media() {
-    font-size: 110rem;
-  }
-
   /* 装飾線 */
   &::before,
   &::after {
@@ -52,5 +48,27 @@
     opacity: 0.25;
     height: 1px;
     position: absolute;
+  }
+
+  // 上
+  &::before {
+    top: 8rem;
+  }
+
+  &::after {
+    bottom: 4rem;
+  }
+
+  @include g.media() {
+    font-size: 110rem;
+
+    // 上
+    &::before {
+      top: 17rem;
+    }
+
+    &::after {
+      bottom: 11rem;
+    }
   }
 }
