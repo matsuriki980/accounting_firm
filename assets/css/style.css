@@ -1901,7 +1901,7 @@ body {
 @media (width >= 900px) {
   .p-top__service-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 480rem 1fr;
     width: 100%;
     border: 0;
   }
@@ -1916,6 +1916,9 @@ body {
     background: #ffffff;
     padding-bottom: 90rem;
     border-top: 1px solid rgba(48, 48, 48, 0.2);
+  }
+  .p-top__service-card:first-of-type .p-top__service-card-link {
+    padding-left: 30rem;
   }
   .p-top__service-card:nth-of-type(2) {
     transform: translateY(30rem);
@@ -1936,6 +1939,9 @@ body {
   }
   .p-top__service-card:nth-of-type(3) {
     transform: translateY(60rem);
+  }
+  .p-top__service-card:nth-of-type(3) .p-top__service-card-link {
+    padding-right: 30rem;
   }
 }
 
@@ -1986,6 +1992,9 @@ body {
   line-height: 1.1;
   letter-spacing: 0.06em;
   margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media (width >= 900px) {
   .p-top__service-card-title-ja {
