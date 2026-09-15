@@ -1865,6 +1865,13 @@ body {
 /* --------------------------------------
   top-service
 -------------------------------------- */
+@media (width >= 900px) {
+  .p-top__service {
+    position: relative;
+    z-index: 10;
+  }
+}
+
 .p-top__service-inner {
   padding-top: 45rem;
 }
@@ -1923,7 +1930,7 @@ body {
 }
 @media (width >= 900px) {
   .p-top__service-cards-wrapper {
-    padding-inline: 30rem;
+    overflow: visible;
   }
 }
 
@@ -1950,7 +1957,9 @@ body {
     width: auto;
     background: #ffffff;
     padding-bottom: 90rem;
-    border-top: 1px solid rgba(48, 48, 48, 0.2);
+  }
+  .p-top__service-card:first-of-type {
+    padding-left: 30rem;
   }
   .p-top__service-card:first-of-type .p-top__service-card-link {
     padding-left: 30rem;
@@ -1974,6 +1983,7 @@ body {
   }
   .p-top__service-card:nth-of-type(3) {
     transform: translateY(60rem);
+    padding-right: 30rem;
   }
   .p-top__service-card:nth-of-type(3) .p-top__service-card-link {
     padding-right: 30rem;
@@ -1988,7 +1998,8 @@ body {
 @media (width >= 900px) {
   .p-top__service-card-link {
     padding: 60rem;
-    border: 0;
+    border-right: 0;
+    border-top: 1px solid rgba(48, 48, 48, 0.2);
   }
   .p-top__service-card-link:hover .p-top__service-card-img img {
     scale: 1.2;
