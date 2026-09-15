@@ -2190,8 +2190,10 @@ body {
   display: block;
 }
 
-.p-top-feature__btn-wrapper {
-  width: 411rem;
+@media (width >= 900px) {
+  .p-top-feature__btn-wrapper {
+    width: 411rem;
+  }
 }
 
 .p-top-feature__marquee {
