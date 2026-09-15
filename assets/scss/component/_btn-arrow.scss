@@ -8,7 +8,7 @@
   place-items: center;
   width: 84rem;
   height: 30rem;
-  border: 1px solid g.$color-text;
+  border: 1px solid currentColor;
   border-radius: 15rem;
   opacity: 0.4;
   transition: opacity 0.3s;
@@ -30,5 +30,5 @@
   mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   mask-size: contain;
-  background-color: g.$color-text;
+  background-color: currentColor;
 }
