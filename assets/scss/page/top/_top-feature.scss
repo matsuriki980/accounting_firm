@@ -50,7 +50,7 @@
 
     &::after {
       width: 90rem;
-      bottom: 90rem;
+      bottom: 180rem;
       left: 90rem;
     }
   }
@@ -98,6 +98,7 @@
 .p-top-feature__block {
   @include g.media() {
     display: grid;
+    align-items: flex-start;
     grid-template-columns: 360rem 1fr;
     gap: 104rem;
   }
