@@ -5,7 +5,7 @@
   utility
 -------------------------------------- */
 
-/* padding */ 
+/* padding */
 .u-p {
   padding: 30rem;
 }
@@ -80,4 +80,9 @@
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
+}
+
+/* overflow-hidden */
+.u-overflow-hidden {
+  overflow: hidden;
 }
