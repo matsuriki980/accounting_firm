@@ -786,8 +786,8 @@ body {
 }
 .l-header__btn--hamburger span:nth-of-type(2) {
   width: 30%;
-  top: calc(50% + 2px);
-  left: calc(50% + 2px);
+  top: 55%;
+  left: 56%;
 }
 @media (width >= 900px) {
   .l-header__btn--hamburger span:nth-of-type(2) {
@@ -853,6 +853,36 @@ body {
   }
   .l-header.is-open .l-header__btn--hamburger:hover span {
     background: #303030;
+  }
+}
+
+/* 下層ページ */
+.l-header--sub-page {
+  color: #ffffff;
+}
+.l-header--sub-page .l-header__logo-link {
+  background-color: currentColor;
+}
+.l-header--sub-page .l-header__btn {
+  border: 1px solid currentColor;
+}
+@media (width >= 900px) {
+  .l-header--sub-page .l-header__btn--contact:hover {
+    background: #ffffff;
+  }
+  .l-header--sub-page .l-header__btn--contact:hover::before {
+    background-color: #303030;
+  }
+}
+.l-header--sub-page .l-header__btn--hamburger span {
+  background: #303030;
+}
+@media (width >= 900px) {
+  .l-header--sub-page .l-header__btn--hamburger:hover {
+    background: transparent;
+  }
+  .l-header--sub-page .l-header__btn--hamburger:hover span {
+    background: #ffffff;
   }
 }
 
