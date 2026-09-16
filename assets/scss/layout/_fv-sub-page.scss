@@ -13,6 +13,7 @@
   background-image: url(../img/feature/p-feature__fv-sp.jpg);
   @include g.background-img;
   position: relative;
+  overflow: hidden;
 
   // 透過背景
   &::before {
@@ -37,6 +38,11 @@
 .l-fv-sub-page__title-wrapper {
   color: currentColor;
   z-index: g.$z-index-default;
+  margin-bottom: -36rem;
+
+  @include g.media() {
+    margin-bottom: 0;
+  }
 }
 
 .l-fv-sub-page__title-ja {
