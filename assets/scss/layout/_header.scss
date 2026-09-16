@@ -152,8 +152,8 @@
     // 下のborder
     span:nth-of-type(2) {
       width: 30%;
-      top: calc(50% - -2px);
-      left: calc(50% - -2px);
+      top: 55%;
+      left: 56%;
 
       @include g.media() {
         top: calc(50% - -3px);
@@ -238,6 +238,49 @@
           // border
           span {
             background: g.$color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 下層ページ */
+.l-header--sub-page {
+  // スクロール位置がページトップの時、白色にする
+  color: g.$color-white;
+
+  .l-header__logo-link {
+    background-color: currentColor;
+  }
+
+  .l-header__btn {
+    border: 1px solid currentColor;
+
+    &--contact {
+      @include g.media() {
+        &:hover {
+          background: g.$color-white;
+
+          // iconの色を変更
+          &::before {
+            background-color: g.$color-primary;
+          }
+        }
+      }
+    }
+
+    &--hamburger {
+      span {
+        background: g.$color-primary;
+      }
+
+      @include g.media() {
+        &:hover {
+          background: transparent;
+
+          span {
+            background: g.$color-white;
           }
         }
       }
