@@ -2836,4 +2836,16 @@ body {
   }
 }
 
+/* --------------------------------------
+  service-fv
+-------------------------------------- */
+.p-about-fv {
+  background-image: url(../img/about/p-about__fv-sp.jpg);
+}
+@media (width >= 900px) {
+  .p-about-fv {
+    background-image: url(../img/about/p-about__fv.jpg);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
