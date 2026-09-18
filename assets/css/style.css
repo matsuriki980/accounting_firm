@@ -3082,4 +3082,110 @@ body {
   }
 }
 
+/* --------------------------------------
+  about-company
+-------------------------------------- */
+.p-about-company {
+  position: relative;
+}
+.p-about-company::before {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 90rem;
+  background: #ffffff;
+  position: absolute;
+  top: -15rem;
+  left: 0;
+}
+@media (width >= 900px) {
+  .p-about-company::before {
+    top: -30rem;
+    width: 50%;
+  }
+}
+
+.p-about-company__inner {
+  padding: 76rem 30rem;
+}
+@media (width >= 900px) {
+  .p-about-company__inner {
+    display: flex;
+    gap: 134rem;
+    padding: 76rem 120rem 120rem;
+  }
+}
+
+.p-about-company__title-wrapper {
+  margin-bottom: 56rem;
+}
+
+.p-about-company__title-en::before {
+  width: 145rem;
+  top: 8rem;
+  left: -18rem;
+}
+.p-about-company__title-en::after {
+  width: 216rem;
+  bottom: 4rem;
+  right: -20rem;
+}
+@media (width >= 900px) {
+  .p-about-company__title-en::before {
+    width: 300rem;
+    top: 14rem;
+    left: -30rem;
+  }
+  .p-about-company__title-en::after {
+    width: 270rem;
+    bottom: 10rem;
+    right: -30rem;
+  }
+}
+
+@media (width >= 900px) {
+  .p-about-company__list {
+    width: 100%;
+    margin-top: 44rem;
+  }
+}
+
+.p-about-company__item {
+  padding-block: 20rem;
+  border-top: 1px solid rgba(29, 29, 29, 0.25);
+  border-bottom: 1px solid rgba(29, 29, 29, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+.p-about-company__item dt {
+  font-size: 18rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.p-about-company__item dd {
+  font-weight: 400;
+}
+.p-about-company__item dd span {
+  display: block;
+  line-height: 2;
+}
+@media (width >= 900px) {
+  .p-about-company__item {
+    display: grid;
+    grid-template-columns: 75rem 1fr;
+    gap: 12rem 45rem;
+    padding-block: 30rem;
+  }
+  .p-about-company__item dt {
+    font-size: 16rem;
+  }
+  .p-about-company__item dt:has(+ dd span) {
+    line-height: 2;
+  }
+  .p-about-company__item dd {
+    grid-column: 2/3;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
