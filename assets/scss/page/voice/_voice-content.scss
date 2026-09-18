@@ -1,0 +1,45 @@
+@use "../../global/" as g;
+
+/* --------------------------------------
+  voice-content
+-------------------------------------- */
+.p-voice {
+  background: g.$color-primary;
+  color: g.$color-white;
+}
+
+.p-voice__inner {
+  padding: 76rem 30rem;
+
+  @include g.media() {
+    padding: 90rem 30rem 155rem;
+  }
+}
+
+.p-voice__list {
+  @include g.media() {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p-voice__item {
+  border-top: 1px solid rgba($color: g.$color-white, $alpha: 0.2);
+  border-left: 1px solid rgba($color: g.$color-white, $alpha: 0.2);
+  border-right: 1px solid rgba($color: g.$color-white, $alpha: 0.2);
+
+  @include g.media() {
+    border-left: 0;
+
+    // 2列目のitemを30remずらす
+    &:nth-of-type(3n - 1) {
+      transform: translateY(30rem);
+    }
+
+    // 3列目のitemを60remずらす・borderを削除
+    &:nth-of-type(3n) {
+      border-right: 0;
+      transform: translateY(60rem);
+    }
+  }
+}
