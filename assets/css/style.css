@@ -185,6 +185,19 @@ body {
   overflow: hidden;
 }
 
+/* visually-hidden */
+.u-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* --------------------------------------
   title
 -------------------------------------- */
@@ -399,6 +412,9 @@ body {
   color: #ffffff;
 }
 
+/* --------------------------------------
+  pagination-btn
+-------------------------------------- */
 /* --------------------------------------
   marquee
 -------------------------------------- */
@@ -2845,6 +2861,48 @@ body {
 @media (width >= 900px) {
   .p-voice-fv {
     background-image: url(../img/voice/p-voice__fv.jpg);
+  }
+}
+
+/* --------------------------------------
+  voice-content
+-------------------------------------- */
+.p-voice {
+  background: #303030;
+  color: #ffffff;
+}
+
+.p-voice__inner {
+  padding: 76rem 30rem;
+}
+@media (width >= 900px) {
+  .p-voice__inner {
+    padding: 90rem 30rem 155rem;
+  }
+}
+
+@media (width >= 900px) {
+  .p-voice__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p-voice__item {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (width >= 900px) {
+  .p-voice__item {
+    border-left: 0;
+  }
+  .p-voice__item:nth-of-type(3n - 1) {
+    transform: translateY(30rem);
+  }
+  .p-voice__item:nth-of-type(3n) {
+    border-right: 0;
+    transform: translateY(60rem);
   }
 }
 
