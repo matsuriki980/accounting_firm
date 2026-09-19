@@ -3120,6 +3120,73 @@ body {
 }
 
 /* --------------------------------------
+  voice-other
+-------------------------------------- */
+.p-voice-other {
+  background: #efefef;
+}
+
+.p-voice-other__inner {
+  padding: 76rem 30rem;
+}
+@media (width >= 900px) {
+  .p-voice-other__inner {
+    padding: 106rem 120rem 122rem;
+  }
+}
+
+.p-voice-other__title-wrapper {
+  margin-bottom: 37rem;
+}
+@media (width >= 900px) {
+  .p-voice-other__title-wrapper {
+    margin-bottom: 79rem;
+  }
+}
+
+@media (width >= 900px) {
+  .p-voice-other__title-en {
+    font-size: 76rem;
+  }
+}
+
+@media (width >= 900px) {
+  .p-voice-other__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p-voice-other__item {
+  border-top: 1px solid rgba(29, 29, 29, 0.25);
+}
+.p-voice-other__item:nth-of-type(3) {
+  border-bottom: 1px solid rgba(29, 29, 29, 0.25);
+}
+@media (width >= 900px) {
+  .p-voice-other__item {
+    border-top: 0;
+    border-right: 1px solid rgba(29, 29, 29, 0.25);
+  }
+  .p-voice-other__item:nth-of-type(1) {
+    border-left: 1px solid rgba(29, 29, 29, 0.25);
+  }
+  .p-voice-other__item:nth-of-type(3) {
+    border-bottom: 0;
+  }
+}
+
+.p-voice-other__link {
+  padding-inline: 15rem;
+}
+@media (width >= 900px) {
+  .p-voice-other__link {
+    padding-block: 0;
+    padding-inline: 50rem;
+  }
+}
+
+/* --------------------------------------
   about-fv
 -------------------------------------- */
 .p-about-fv {
