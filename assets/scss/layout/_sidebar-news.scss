@@ -9,6 +9,13 @@
   flex-direction: column;
   gap: 50rem;
   color: g.$color-text;
+  margin-bottom: 39rem;
+
+  @include g.media() {
+    margin-bottom: 0;
+    position: sticky;
+    left: 0;
+  }
 }
 
 .l-news-sidebar__title {
@@ -17,14 +24,22 @@
   line-height: 0;
   letter-spacing: 0.04em;
   padding-bottom: 24rem;
-  margin-bottom: 20rem;
+  margin-bottom: 12rem;
   border-bottom: 1px solid currentColor;
+
+  @include g.media() {
+    margin-bottom: 20rem;
+  }
 }
 
 .l-news-sidebar__list {
   display: flex;
   flex-direction: column;
-  gap: 20rem;
+  gap: 8rem;
+
+  @include g.media() {
+    gap: 20rem;
+  }
 }
 
 .l-news-sidebar__link {
