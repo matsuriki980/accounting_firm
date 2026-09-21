@@ -36,6 +36,8 @@
   font: inherit;
   color: inherit;
   text-transform: none;
+  border: 0;
+  background: transparent;
 }
 
 /* ボタン要素のタイポグラフィをリセット */
@@ -3757,6 +3759,172 @@ body {
 .p-about-access__map iframe {
   width: 100%;
   height: 100%;
+}
+
+/* --------------------------------------
+  contact-fv
+-------------------------------------- */
+.p-contact-fv {
+  background-image: none;
+  background: #303030;
+}
+.p-contact-fv::before {
+  display: none;
+}
+.p-contact-fv span {
+  display: block;
+}
+@media (width >= 900px) {
+  .p-contact-fv {
+    background-image: none;
+  }
+  .p-contact-fv span {
+    display: inline-block;
+  }
+}
+
+/* --------------------------------------
+  contact
+-------------------------------------- */
+.p-contact {
+  background: #fcfafa;
+}
+
+.p-contact__inner {
+  padding: 76rem 30rem;
+}
+@media (width >= 900px) {
+  .p-contact__inner {
+    padding: 90rem 320rem 120rem;
+  }
+}
+
+.p-contact__lead {
+  margin-bottom: 46rem;
+}
+
+.p-contact__supplement {
+  font-size: 14rem;
+}
+
+.p-contact-form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  margin-bottom: 34rem;
+}
+@media (width >= 900px) {
+  .p-contact-form__list {
+    gap: 22rem;
+  }
+}
+
+.p-contact-form__item--postal-code .c-contact__text {
+  display: inline-block;
+}
+
+.p-contact-form__head {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 12rem;
+}
+
+.p-contact-form__required {
+  font-size: 12rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  color: #f03341;
+}
+
+.p-contact-form__input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+}
+.p-contact-form__input-wrapper span {
+  width: 10.5rem;
+  height: 1px;
+  background: #1d1d1d;
+}
+
+#postal-code-first {
+  width: 66rem;
+}
+
+#postal-code-second {
+  width: 76rem;
+}
+
+.p-contact-form__agreement-wrapper {
+  margin-bottom: 30rem;
+}
+@media (width >= 900px) {
+  .p-contact-form__agreement-wrapper {
+    text-align: center;
+  }
+}
+
+.p-contact-form__agreement {
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 18rem 1fr;
+  gap: 13rem;
+}
+.p-contact-form__agreement input {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-top: 8rem;
+}
+.p-contact-form__agreement a {
+  color: #3f4f8a;
+  border-bottom: 1px solid currentColor;
+}
+@media (width >= 900px) {
+  .p-contact-form__agreement {
+    display: inline-grid;
+    text-align: center;
+  }
+}
+
+.c-contact__lead {
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 2.5;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.c-contact__lead span {
+  display: block;
+}
+
+.c-contact__label {
+  font-size: 18rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.08em;
+}
+
+.c-contact__text {
+  width: 100%;
+  border: 1px solid rgba(48, 48, 48, 0.1);
+  background: #efefef;
+  padding: 7rem 17rem;
+  line-height: 2;
+}
+
+.c-contact__text:not(textarea) {
+  height: 46rem;
+  line-height: 1;
+}
+
+.c-btn-large {
+  margin: 0 auto;
 }
 
 /* --------------------------------------
