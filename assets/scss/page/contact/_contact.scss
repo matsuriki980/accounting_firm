@@ -114,7 +114,8 @@
   }
 }
 
-
-.c-btn-large {
-  margin: 0 auto;
+// お問い合わせ内容の入力欄の高さをauto
+.p-contact__textarea {
+  height: auto;
+  line-height: 2;
 }

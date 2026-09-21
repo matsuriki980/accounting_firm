@@ -399,6 +399,7 @@ body {
 @media (width >= 900px) {
   .c-btn-large {
     width: 300rem;
+    margin: 0 auto;
   }
 }
 .c-btn-large:hover {
@@ -3929,8 +3930,9 @@ body {
   }
 }
 
-.c-btn-large {
-  margin: 0 auto;
+.p-contact__textarea {
+  height: auto;
+  line-height: 2;
 }
 
 /* --------------------------------------
