@@ -21,6 +21,7 @@
 
   @include g.media() {
     width: 300rem;
+    margin: 0 auto;
   }
 
   &:hover {
