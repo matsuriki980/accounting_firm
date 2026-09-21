@@ -704,6 +704,40 @@ body {
 }
 
 /* --------------------------------------
+  contact
+-------------------------------------- */
+.c-contact__lead {
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 2.5;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.c-contact__lead span {
+  display: block;
+}
+
+.c-contact__label {
+  font-size: 18rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.08em;
+}
+
+.c-contact__text {
+  width: 100%;
+  border: 1px solid rgba(48, 48, 48, 0.1);
+  background: #efefef;
+  padding: 7rem 17rem;
+  line-height: 2;
+}
+
+.c-contact__text {
+  height: 46rem;
+  line-height: 1;
+}
+
+/* --------------------------------------
   header
 -------------------------------------- */
 .l-header {
@@ -1690,6 +1724,18 @@ body {
   }
   .l-footer__privacy-policy:hover {
     opacity: 1;
+  }
+}
+
+/* --------------------------------------
+  contact-inner
+-------------------------------------- */
+.l-contact__inner {
+  padding: 76rem 30rem;
+}
+@media (width >= 900px) {
+  .l-contact__inner {
+    padding: 90rem 320rem 120rem;
   }
 }
 
@@ -3790,15 +3836,6 @@ body {
   background: #fcfafa;
 }
 
-.p-contact__inner {
-  padding: 76rem 30rem;
-}
-@media (width >= 900px) {
-  .p-contact__inner {
-    padding: 90rem 320rem 120rem;
-  }
-}
-
 .p-contact__lead {
   margin-bottom: 46rem;
 }
@@ -3892,39 +3929,42 @@ body {
   }
 }
 
-.c-contact__lead {
-  font-size: 16rem;
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: 0.08em;
-  text-align: center;
-}
-.c-contact__lead span {
-  display: block;
-}
-
-.c-contact__label {
-  font-size: 18rem;
-  font-weight: 500;
-  line-height: 2;
-  letter-spacing: 0.08em;
-}
-
-.c-contact__text {
-  width: 100%;
-  border: 1px solid rgba(48, 48, 48, 0.1);
-  background: #efefef;
-  padding: 7rem 17rem;
-  line-height: 2;
-}
-
-.c-contact__text:not(textarea) {
-  height: 46rem;
-  line-height: 1;
-}
-
 .c-btn-large {
   margin: 0 auto;
+}
+
+/* --------------------------------------
+  contact-confirm
+-------------------------------------- */
+.p-contact-confirm__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  margin-bottom: 56rem;
+}
+@media (width >= 900px) {
+  .p-contact-confirm__list {
+    gap: 40rem;
+  }
+}
+
+.p-contact-confirm__item {
+  padding-bottom: 12rem;
+  border-bottom: 1px solid rgba(29, 29, 29, 0.25);
+}
+
+.p-contact-confirm__text {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  height: auto;
+  line-height: 2;
+}
+
+.p-contact-confirm__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
 }
 
 /* --------------------------------------

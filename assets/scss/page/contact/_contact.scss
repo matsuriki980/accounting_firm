@@ -8,13 +8,6 @@
   background: g.$color-bg-primary;
 }
 
-.p-contact__inner {
-  padding: 76rem 30rem;
-
-  @include g.media() {
-    padding: 90rem 320rem 120rem;
-  }
-}
 .p-contact__lead {
   margin-bottom: 46rem;
 }
@@ -121,38 +114,6 @@
   }
 }
 
-.c-contact__lead {
-  font-size: 16rem;
-  font-weight: g.$font-weight-medium;
-  line-height: 2.5;
-  letter-spacing: 0.08em;
-  text-align: center;
-
-  span {
-    display: block;
-  }
-}
-
-.c-contact__label {
-  font-size: 18rem;
-  font-weight: g.$font-weight-medium;
-  line-height: 2;
-  letter-spacing: 0.08em;
-}
-
-.c-contact__text {
-  width: 100%;
-  border: 1px solid rgba($color: g.$color-primary, $alpha: 0.1);
-  background: g.$color-bg-accent;
-  padding: 7rem 17rem;
-  line-height: 2;
-}
-
-// お問い合わせ内容以外の入力欄に高さを指定する
-.c-contact__text:not(textarea) {
-  height: 46rem;
-  line-height: 1;
-}
 
 .c-btn-large {
   margin: 0 auto;
