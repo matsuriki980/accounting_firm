@@ -707,17 +707,6 @@ body {
 /* --------------------------------------
   contact
 -------------------------------------- */
-.c-contact__lead {
-  font-size: 16rem;
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: 0.08em;
-  text-align: center;
-}
-.c-contact__lead span {
-  display: block;
-}
-
 .c-contact__label {
   font-size: 18rem;
   font-weight: 500;
@@ -736,6 +725,20 @@ body {
 .c-contact__text {
   height: 46rem;
   line-height: 1;
+}
+
+/* --------------------------------------
+  lead
+-------------------------------------- */
+.c-lead {
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 2.5;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.c-lead span {
+  display: block;
 }
 
 /* --------------------------------------
@@ -1729,13 +1732,13 @@ body {
 }
 
 /* --------------------------------------
-  contact-inner
+  inner
 -------------------------------------- */
-.l-contact__inner {
+.l-inner {
   padding: 76rem 30rem;
 }
 @media (width >= 900px) {
-  .l-contact__inner {
+  .l-inner {
     padding: 90rem 320rem 120rem;
   }
 }
@@ -4101,6 +4104,37 @@ body {
 .p-privacy-policy__address span {
   line-height: 2;
   display: block;
+}
+
+/* --------------------------------------
+  error-404
+-------------------------------------- */
+.p-404__inner {
+  padding-top: 120rem;
+}
+@media (width >= 900px) {
+  .p-404__inner {
+    padding-top: 165rem;
+  }
+}
+
+.p-404__title {
+  font-size: 48rem;
+  font-weight: 200;
+  line-height: 1.459;
+  letter-spacing: -0.05em;
+  margin-bottom: 24rem;
+  text-align: center;
+}
+@media (width >= 900px) {
+  .p-404__title {
+    font-size: 72rem;
+    margin-bottom: 56rem;
+  }
+}
+
+.p-404__lead {
+  margin-bottom: 56rem;
 }
 
 /*# sourceMappingURL=style.css.map */
