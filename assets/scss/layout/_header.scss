@@ -10,7 +10,9 @@
   top: 0;
   left: 0;
   z-index: g.$z-index-header;
-  transition: color 0.3s;
+  transition:
+    color 0.3s,
+    background 0.3s;
 }
 
 .l-header__inner {
@@ -287,4 +289,9 @@
       }
     }
   }
+}
+
+/* トリガー要素通過状態で背景の表示・非表示切り替え */
+.l-header.is-active {
+  background: g.$color-white;
 }
