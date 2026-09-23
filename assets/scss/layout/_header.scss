@@ -234,6 +234,7 @@
       @include g.media() {
         &:hover {
           background: g.$color-white;
+          border: 1px solid g.$color-primary;
 
           // border
           span {

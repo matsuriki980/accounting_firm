@@ -10,6 +10,7 @@
   width: 100%;
   height: 100vh;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   overflow: scroll;
@@ -19,15 +20,16 @@
     opacity 0.3s,
     visibility 0.3s;
 
-  @include g.media() {
-    overflow: hidden;
-    position: relative;
-  }
-
   // open時、表示
   &.is-open {
     opacity: 1;
     visibility: visible;
+  }
+
+  @include g.media() {
+    &.is-open {
+      overflow: hidden;
+    }
   }
 }
 
