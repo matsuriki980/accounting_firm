@@ -1493,13 +1493,10 @@ body {
 }
 
 .l-footer__contact-list {
-  display: flex;
-  gap: 8rem;
   width: 466rem;
 }
 @media (width >= 900px) {
   .l-footer__contact-list {
-    flex-direction: column;
     width: auto;
   }
 }
