@@ -1164,11 +1164,9 @@ body {
     inset: 0;
     transition: opacity 0.5s;
     opacity: 0;
-    visibility: hidden;
   }
   .l-hamburger-menu__img img.is-active {
     opacity: 1;
-    visibility: visible;
   }
 }
 
