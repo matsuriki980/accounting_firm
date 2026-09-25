@@ -18,6 +18,5 @@ export function initTopServiceSlider() {
     },
   });
 
-
   mySplide.mount();
 }

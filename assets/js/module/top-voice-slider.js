@@ -18,7 +18,6 @@ export function initTopVoiceSlider() {
     },
   });
 
-  if (mySplide) return;
 
   mySplide.mount();
 
