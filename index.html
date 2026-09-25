@@ -29,7 +29,8 @@
         rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- 装飾なし（コアスタイル）の最新版 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -228,88 +229,83 @@
                     </a>
                 </div>
 
-                <div class="splide" role="group" aria-label="Splideの基本的なHTML">
-                    <div class="splide__track">
+                <div class="splide js-top-service-slider" role="group" aria-label="Splideの基本的なHTML">
+                    <div class="splide__track p-top-service__slider-track">
 
-                        <div class="p-top__service-cards-wrapper">
-                            <div class="splide__list p-top__service-cards">
-                                <div class="splide__slide p-top__service-card">
-                                    <a href="/service/#tax" class="p-top__service-card-link">
-                                        <div class=" p-top__service-card-img">
-                                            <img src="/assets/img/top/p-top-service-01.jpg" width="270" height="300"
-                                                alt="資料を確認し電卓を使う人物の手元">
+                        <div class="splide__list p-top__service-cards">
+                            <div class="splide__slide p-top__service-card">
+                                <a href="/service/#tax" class="p-top__service-card-link">
+                                    <div class=" p-top__service-card-img">
+                                        <img src="/assets/img/top/p-top-service-01.jpg" width="270" height="300"
+                                            alt="資料を確認し電卓を使う人物の手元">
+                                    </div>
+                                    <div class="p-top__service-card-content">
+                                        <div class="p-top__service-card-title-wrapper">
+                                            <h3 class="p-top__service-card-title-ja">
+                                                税務・会計
+                                                <span class="c-service__decorations p-top__service-card-decorations">
+                                                    <span></span>
+                                                </span>
+                                            </h3>
+                                            <p class="p-top__service-card-title-en u-en">Tax & Accounting</p>
                                         </div>
-                                        <div class="p-top__service-card-content">
-                                            <div class="p-top__service-card-title-wrapper">
-                                                <h3 class="p-top__service-card-title-ja">
-                                                    税務・会計
-                                                    <span
-                                                        class="c-service__decorations p-top__service-card-decorations">
-                                                        <span></span>
-                                                    </span>
-                                                </h3>
-                                                <p class="p-top__service-card-title-en u-en">Tax & Accounting</p>
-                                            </div>
 
-                                            <span class="c-btn-arrow p-top__service-btn-arrow">
-                                                <span class="c-btn-arrow__icon"></span>
-                                            </span>
+                                        <span class="c-btn-arrow p-top__service-btn-arrow">
+                                            <span class="c-btn-arrow__icon"></span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="splide__slide p-top__service-card">
+                                <a href="/service/#capital" class="p-top__service-card-link">
+                                    <div class=" p-top__service-card-img">
+                                        <img src="/assets/img/top/p-top-service-02.jpg" width="270" height="300"
+                                            alt="電卓を手に提案を行う男性とそれを確認する女性">
+                                    </div>
+                                    <div class="p-top__service-card-content">
+                                        <div class="p-top__service-card-title-wrapper">
+                                            <h3 class="p-top__service-card-title-ja">
+                                                相続・贈与・譲渡所得
+                                                <span class="c-service__decorations p-top__service-card-decorations">
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                            </h3>
+                                            <p class="p-top__service-card-title-en u-en">Capital gains</p>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="splide__slide p-top__service-card">
-                                    <a href="/service/#capital" class="p-top__service-card-link">
-                                        <div class=" p-top__service-card-img">
-                                            <img src="/assets/img/top/p-top-service-02.jpg" width="270" height="300"
-                                                alt="電卓を手に提案を行う男性とそれを確認する女性">
-                                        </div>
-                                        <div class="p-top__service-card-content">
-                                            <div class="p-top__service-card-title-wrapper">
-                                                <h3 class="p-top__service-card-title-ja">
-                                                    相続・贈与・譲渡所得
-                                                    <span
-                                                        class="c-service__decorations p-top__service-card-decorations">
-                                                        <span></span>
-                                                        <span></span>
-                                                    </span>
-                                                </h3>
-                                                <p class="p-top__service-card-title-en u-en">Capital gains</p>
-                                            </div>
 
-                                            <span class="c-btn-arrow p-top__service-btn-arrow">
-                                                <span class="c-btn-arrow__icon"></span>
-                                            </span>
+                                        <span class="c-btn-arrow p-top__service-btn-arrow">
+                                            <span class="c-btn-arrow__icon"></span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="splide__slide p-top__service-card">
+                                <a href="/service/#support" class="p-top__service-card-link">
+                                    <div class=" p-top__service-card-img">
+                                        <img src="/assets/img/top/p-top-service-03.jpg" width="270" height="300"
+                                            alt="ビル群の前に佇むキャリアウーマン">
+                                    </div>
+                                    <div class="p-top__service-card-content">
+                                        <div class="p-top__service-card-title-wrapper">
+                                            <h3 class="p-top__service-card-title-ja">
+                                                設立・開業支援
+                                                <span class="c-service__decorations p-top__service-card-decorations">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                            </h3>
+                                            <p class="p-top__service-card-title-en u-en">Support for opening a
+                                                business
+                                            </p>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="splide__slide p-top__service-card">
-                                    <a href="/service/#support" class="p-top__service-card-link">
-                                        <div class=" p-top__service-card-img">
-                                            <img src="/assets/img/top/p-top-service-03.jpg" width="270" height="300"
-                                                alt="ビル群の前に佇むキャリアウーマン">
-                                        </div>
-                                        <div class="p-top__service-card-content">
-                                            <div class="p-top__service-card-title-wrapper">
-                                                <h3 class="p-top__service-card-title-ja">
-                                                    設立・開業支援
-                                                    <span
-                                                        class="c-service__decorations p-top__service-card-decorations">
-                                                        <span></span>
-                                                        <span></span>
-                                                        <span></span>
-                                                    </span>
-                                                </h3>
-                                                <p class="p-top__service-card-title-en u-en">Support for opening a
-                                                    business
-                                                </p>
-                                            </div>
 
-                                            <span class="c-btn-arrow p-top__service-btn-arrow">
-                                                <span class="c-btn-arrow__icon"></span>
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
+                                        <span class="c-btn-arrow p-top__service-btn-arrow">
+                                            <span class="c-btn-arrow__icon"></span>
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -736,7 +732,8 @@
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
     <script
-        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js" defer></script>
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
+        defer></script>
     <script src="/assets/js/main.js" type="module"></script>
 </body>
 

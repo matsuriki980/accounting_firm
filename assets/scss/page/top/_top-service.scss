@@ -70,9 +70,7 @@
   }
 }
 
-.p-top__service-cards-wrapper {
-  overflow: hidden;
-
+.p-top-service__slider-track {
   @include g.media() {
     overflow: visible;
   }
@@ -80,12 +78,9 @@
 
 .p-top__service-cards {
   display: flex;
-  width: 1020rem;
-  border-top: 1px solid rgba(48, 48, 48, 0.2);
-  border-bottom: 1px solid rgba(48, 48, 48, 0.2);
 
   @include g.media() {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr 480rem 1fr;
     width: 100%;
     border: 0;
@@ -93,9 +88,10 @@
 }
 
 .p-top__service-card {
-  width: 340rem;
+  border-top: 1px solid rgba(48, 48, 48, 0.2);
 
   @include g.media() {
+    border-top: 0;
     width: auto;
     background: g.$color-white;
     padding-bottom: 90rem;
@@ -128,7 +124,7 @@
         background: g.$color-primary;
         opacity: 0.2;
         top: -30rem;
-        left: -1.1rem;
+        left: -0.5rem;
       }
     }
 
