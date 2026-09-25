@@ -1160,6 +1160,15 @@ body {
   .l-hamburger-menu__img img {
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    inset: 0;
+    transition: opacity 0.5s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .l-hamburger-menu__img img.is-active {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
