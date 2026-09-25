@@ -1,5 +1,9 @@
 export function initTopVoiceSlider() {
-  const mySplide = new Splide(".js-top-voice-slider", {
+  const slider = document.querySelector(".js-top-voice-slider");
+
+  if (!slider) return;
+
+  const mySplide = new Splide(slider, {
     arrows: false, // 矢印非表示
     pagination: false, // ページネーション非表示
     perMove: 1, // 1度で何枚のスライドを移動するか指定
@@ -9,10 +13,12 @@ export function initTopVoiceSlider() {
     breakpoints: {
       900: {
         fixedWidth: "420rem",
-        padding: {right: "510rem"},
+        padding: { right: "510rem" },
       },
     },
   });
+
+  if (mySplide) return;
 
   mySplide.mount();
 
