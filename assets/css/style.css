@@ -2411,7 +2411,8 @@ body {
 
 @media (width >= 900px) {
   .p-top-voice__block {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 930rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 90rem;
@@ -2469,18 +2470,15 @@ body {
 }
 .p-top-voice .splide__list {
   display: flex;
-  overflow: hidden;
 }
 
 .p-top-voice__item {
-  width: 330rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 @media (width >= 900px) {
   .p-top-voice__item {
-    width: 420rem;
     border-top: 0;
     border-bottom: 0;
   }
