@@ -18,7 +18,6 @@ export function initTopServiceSlider() {
     },
   });
 
-  if (mySplide) return;
 
   mySplide.mount();
 }
