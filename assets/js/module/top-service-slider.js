@@ -1,5 +1,9 @@
 export function initTopServiceSlider() {
-  const mySplide = new Splide(".js-top-service-slider", {
+  const slider = document.querySelector(".js-top-service-slider");
+
+  if (!slider) return;
+
+  const mySplide = new Splide(slider, {
     mediaQuery: "min", // モバイルファーストでメディアクエリを判定する設定
     arrows: false, // 矢印非表示
     pagination: false, // ページネーション非表示
@@ -13,6 +17,8 @@ export function initTopServiceSlider() {
       },
     },
   });
+
+  if (mySplide) return;
 
   mySplide.mount();
 }
