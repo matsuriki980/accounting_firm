@@ -91,6 +91,7 @@
 
 html {
   font-size: calc(100vw / var(--base-vw));
+  scroll-behavior: smooth;
 }
 
 body {
